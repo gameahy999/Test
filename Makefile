@@ -11,7 +11,7 @@ all : $(PROG)
 %.o : %.cpp
 	$(CXX) -c $(CFLAGS) $^ -o $@
 
-test : test.o
+test : test.o friend.o
 	$(CXX) $(CFLAGS) $^ -o $@
 
 clean :
